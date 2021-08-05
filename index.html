@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="reset.css" />
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>Welcome to the never ending game of Rock, Paper, and Scissors.</h1>
+    <h2>got ahead and you can type either: Rock, Paper or Scissors.</h2>
+
+    <h3>Type in your move</h3>
+    <form>
+        <label for="userInput">Type your Choice Below</label><br>
+        <button type="button" onclick="getUserChoice(0)">Rock</button>
+        <button type="button" onclick="getUserChoice(1)">Paper</button>
+        <button type="button" onclick="getUserChoice(2)">Scissors</button>
+    </form>
+
+    <section>
+        <p id= "CPUChoice"></p>
+        <div>
+            <p id = "DidYouWin">
+
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3 id="Wins">Wins:</h3>
+            <h3 id="Loses">Loses:</h3>
+            <h3 id="Ties">Ties:</h3>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
